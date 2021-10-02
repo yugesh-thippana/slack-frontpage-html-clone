@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>codedamn Project</title>
+        <link rel = "stylesheet" href = "style.css" />
+	</head>
+	<body>
+		<!-- start writing your code -->
+        <div class = "header">
+            <div class = "main-header">
+               <i class="far fa-clock fa-1x clock-symbol"></i>
+             
+               <input placeholder="Seach tutorial-daltoni" type = "text" / >
+               
+               <i class="far fa-question-circle info"></i>
+            </div>
+            <i class="fas fa-user profile"></i>
+        </div>
+
+        <div class = "side-bar">
+            <div class = "profile-details">
+                <div class = "profile-name">
+                    Cometchat (e)
+                </div>
+                <div class = "online">
+                    <div class = "green-dot" > </div>
+                    <div style = "margin-left: 6px;color: #fff; font-size: 0.7rem; "> Vikrant </div>
+                     <div>
+                        <i class="fas fa-pen-square fa-2x"></i>
+                    </div>
+                </div>
+               
+            </div>
+            <div class = "profile-sub"> 
+                <i class="fas fa-comment-dots fa-1x"></i> Thread
+            </div>
+            <div class = "profile-sub"> 
+                <i> @ </i> Mentions & Reactions
+            </div>
+            <div class = "profile-sub"> 
+                <i class="fas fa-ellipsis-v fa-1x"></i>
+
+More 
+            </div>
+            <div class = "profile-sub"> 
+                <i class="fas fa-caret-down fa-1x"></i> Channels
+            </div>
+            <div class = "profile-sub"> 
+                <i class="fas fa-caret-down fa-1x"></i> Direct Messages. 
+            </div>
+        </div>
+
+        <div class = "center-content" >
+            <div>
+            <img src = "assets/images/logo.png" class = "slack-icon"/> </div>
+            <div style = "font-size: 1.3rem;font-weight: 700; padding: 5px;">
+                Add New Channel
+            </div>
+            <input placeholder="Channel Name" class = "inp"/>
+            <input placeholder="Select privacy" class = "inp"/>
+            <div class="create-channel" > Create Channel </div>
+        </div>
+
+<script src="https://kit.fontawesome.com/e06518d4fd.js" crossorigin="anonymous"></script>
+    <script> 
+        let sideBar = document.querySelector(".side-bar")
+        let center = document.querySelector(".center-content")
+
+        center.style.setProperty("left", `${window.getComputedStyle(sideBar).width}` )
+        center.style.setProperty("width", `calc(100% - ${window.getComputedStyle(sideBar).width})`)
+    </script>
+	</body>
+</html>
